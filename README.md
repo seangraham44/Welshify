@@ -13,3 +13,10 @@ var english = "Give me some grapes.";
 var welsh = Welshify.MakeWelsh(english);
 console.log(welsh);
 ```
+
+```
+Result: Giveiau meio someio graphesiau.
+```
+## Credits
+
+Thanks to everyone in NASA for the years of research that went into the development of this.
