@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example Welshify Usage</title>
+</head>
+<body>
+	<h1>The Great Welshify Framework</h1>
+
+	<div id="englishText">Please give me the 
+	translated version of this text otherwise
+	I will not be happy?</div>
+
+	<div id="translatedText" style="border:1px solid purple; margin: 10px;padding: 15px;"></div>
+</body>
+<script type="text/javascript" src="../dist/assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../dist/assets/js/welshify.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	// gimme the english version
+	var english = $('#englishText').html();
+
+	// now go fetch me the welsh version using this clever algorithm.
+	var welsh = Welshify.MakeWelsh(english);
+
+	// now let me see the welsh version.
+	$('#translatedText').html(welsh);
+
+});
+
+
+</script>
+</html>
