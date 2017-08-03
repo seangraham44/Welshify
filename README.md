@@ -6,4 +6,9 @@ used in over 160 countries and is a phenomena even in the Democratic Republic of
 
 ## Example usage
 
+This is how you get some translated text dude:
+
+var english = "Give me some grapes.";
+var welsh = Welshify.MakeWelsh(english);
+console.log(welsh);
 
