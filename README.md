@@ -15,7 +15,7 @@ console.log(welsh);
 ```
 
 ```
-Result: Giveiau meio someio graphesiau.
+Result: Giveiau meio someio grapesiau.
 ```
 ## Credits
 
