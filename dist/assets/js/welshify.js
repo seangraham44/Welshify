@@ -1,7 +1,7 @@
 /*
 
 	Developed by: Sean Graham
-	Version: 1.01.130.109.32 Service Pack 1
+	Version: 1.01.130.109.32 Service Pack 2
 
 	Welshify is the world leading Welsh translation framework.
 	Tested in over 160 countries even the Egyptians are using
@@ -48,6 +48,14 @@ var Welshify = {
 			}
 
 		return listWords.join(" ").replace(/[^\x20-\x7E]/gmi, "");
+	},
+
+	MakeEnglish: function(theword){
+		return theword;
+	},
+
+	DontMakeFrench: function(theword){
+		return theword;
 	}
 
 }
