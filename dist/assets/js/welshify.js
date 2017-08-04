@@ -56,6 +56,10 @@ var Welshify = {
 
 	DontMakeFrench: function(theword){
 		return theword;
+	},
+
+	GetLlanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch: function(){
+		return "Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch";
 	}
 
 }
