@@ -17,6 +17,19 @@ console.log(welsh);
 ```
 Result: Giveiau meio someio grapesiau.
 ```
+## Other Features
+
+For many years lots of people across the globe have had hours of coding lost because they've had to type the longest placename in Wales. Now you won't need to worry. This common task can be simplified using the following code:
+
+```
+var llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch = Welshify.GetLlanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch();
+console.log(llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch);
+```
+
+```
+Result: llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch
+```
+
 ## Credits
 
 Thanks to everyone in NASA for the years of research that went into the development of this.
