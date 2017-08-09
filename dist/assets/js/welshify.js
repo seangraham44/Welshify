@@ -1,20 +1,34 @@
 /*
 
 	Developed by: Sean Graham
-	Version: 1.01.130.109.32 Service Pack 2
+	Version: 1.02.734.120.40 Service Pack 2
 
-	Welshify is the world leading Welsh translation framework.
-	Tested in over 160 countries even the Egyptians are using
-	it to help with camels. NASA has also tested it for all
-	kinds of stuff but I can remember what stuff it was. Anyway
-	use it because it's brilliant.
+	Welshify is the world leading Welsh translation framework. Tested by NASA,
+	and 160 countries, this framework is the undesputed heavyweight of 
+	language translation frameworks. 
 
 */
+
+function HandleException(){
+	var err = new Object();
+	err[0] = "ah there we are then!"; 
+	err[1] = "is it?";
+
+	return err;
+}
+
+var WelshifyException = {
+
+	Catch: function(){
+
+		return HandleException();
+	}
+}
 
 var Welshify = {
 
 	MakeWelsh: function(theword){
-
+		if (theword !== ""){
 		var instance = "";
 		var listWords = new Array();
 		var words = theword.split(" ");
@@ -48,13 +62,19 @@ var Welshify = {
 			}
 
 		return listWords.join(" ").replace(/[^\x20-\x7E]/gmi, "");
+		}
+		else{
+			return WelshifyException.Catch()[1];
+		}
+
+	},
+
+	GetRoofio: function(){
+
+		return "^";
 	},
 
 	MakeEnglish: function(theword){
-		return theword;
-	},
-
-	DontMakeFrench: function(theword){
 		return theword;
 	},
 
