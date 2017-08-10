@@ -27,6 +27,7 @@ var WelshifyException = {
 
 var Welshify = {
 
+	// converts english to Welsh wooo! (note english is in lower case because it's rubbish)
 	MakeWelsh: function(theword){
 		if (theword !== ""){
 		var instance = "";
@@ -69,17 +70,32 @@ var Welshify = {
 
 	},
 
+	/* because the welsh language has a weird roof
+	 this function returns one. Brill! */
 	GetRoofio: function(){
 
 		return "^";
 	},
 
+	// translates english to english (note the lower case english again)
 	MakeEnglish: function(theword){
 		return theword;
 	},
 
+	// returns the longest placename in Wales
 	GetLlanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch: function(){
 		return "Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch";
+	},
+
+	/* gets a Welsh version of a country. Just put in something
+	 like '35' as a parameter and it'll return the 35th country
+	 in the list, whatever that is. */
+	GetCountry: function(numberiau){
+		try{
+			return Welshify.MakeWelsh(GimmeCountry()[numberiau].name);
+		}catch(err){
+			return WelshifyException.Catch()[0];
+		}
 	}
 
 }

@@ -64,6 +64,27 @@ Result: Give me some grapes.^
 You can see the roof has been added to the end of the word, much like the 
 Welsh language does.
 
+### Get Country
+
+Now countries have their Welsh equivalent, in Welsh. Welshify has made each country more Welshy, thanks to Welshify's unique Welsh translation. It's Welsh! 
+
+Here's how it works.
+
+```
+var country = Welshify.GetCountry(73);
+console.log(country);
+```
+
+```
+Result: Franceiau
+```
+
+All you need to do is put a number inside the Welshify.GetCountry() method and Welshify will give you the 73rd country in the list of countries, whatever that is.
+
+### Exception Handling
+
+Each Welshify feature now returns a 'Wexpection' which, of course, has been Welshifyed.
+
 
 ## Credits
 
