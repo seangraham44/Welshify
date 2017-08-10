@@ -85,6 +85,12 @@ All you need to do is put a number inside the Welshify.GetCountry() method and W
 
 Each Welshify feature now returns a 'Wexpection' which, of course, has been Welshifyed.
 
+The error below is returned when a country cannot be found in the list.
+
+```
+Error: ah there we are then!
+```
+
 
 ## Credits
 
