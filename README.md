@@ -75,6 +75,16 @@ var country = Welshify.GetCountry(73);
 console.log(country);
 ```
 
+#### Advanced mode parameters can be used and have the following effect:
+
+The false flag returns the translated country 60 minutes after requesting it. Pretty useful from time to time.
+
+```
+var country = Welshify.GetCountry(73, false);
+console.log(country);
+```
+
+
 ```
 Result: Franceiau
 ```
@@ -103,7 +113,6 @@ The error below is returned when a country cannot be found in the list.
 ```
 Error: ah there we are then!
 ```
-
 
 ## Credits
 
