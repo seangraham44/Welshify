@@ -100,6 +100,7 @@ The false flag returns the translated country 60 minutes after requesting it. Pr
 var country = Welshify.GetCountry(73, false);
 console.log(country);
 ```
+```
 Result: Franceiau (60 minutes later)
 ```
 
