@@ -83,7 +83,7 @@ All you need to do is put a number inside the Welshify.GetCountry() method and W
 
 ### Get Day
 
-Welshify offers tremendous day translation capabilities and it's better than onion gravy. Here's how it works.
+Welshify offers tremendous day translation capabilities which can only be a good thing. Here's how it works.
 
 ```
 var dayTranslate = Days.Get1stOfJanuary();
