@@ -91,7 +91,7 @@ console.log(dayTranslate);
 ```
 
 ```
-Result: 1tiau Januaryio
+Result: 1stiau Januaryio
 ```
 
 ### Exception Handling
