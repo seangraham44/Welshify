@@ -1,5 +1,4 @@
 function GimmeCountry(){
-
 	return [ 
   {name: 'Afghanistan', code: 'AF'}, 
   {name: 'Åland Islands', code: 'AX'}, 

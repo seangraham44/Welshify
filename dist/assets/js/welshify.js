@@ -73,7 +73,6 @@ var Welshify = {
 	/* because the welsh language has a weird roof
 	 this function returns one. Brill! */
 	GetRoofio: function(){
-
 		return "^";
 	},
 
@@ -96,6 +95,29 @@ var Welshify = {
 		}catch(err){
 			return WelshifyException.Catch()[0];
 		}
-	}
+	},
+
+	// gets various days of the week. Very good feature.
+	GetMonday: function(){
+		return Welshify.MakeWelsh('Monday');
+	},
+	GetTuesday: function(){
+		return Welshify.MakeWelsh('Tuesday');
+	},
+	GetWednesday: function(){
+		return Welshify.MakeWelsh('Wednesday');
+	},
+	GetThursday: function(){
+		return Welshify.MakeWelsh('Thursday');
+	},
+	GetFriday: function(){
+		return Welshify.MakeWelsh('Friday');
+	},
+	GetSaturday: function(){
+		return Welshify.MakeWelsh('Saturday');
+	},
+	GetSunday: function(){
+		return Welshify.MakeWelsh('Sunday');
+	},
 
 }

@@ -14,6 +14,7 @@
 <script type="text/javascript" src="../dist/assets/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../dist/assets/js/welshify-countries.min.js"></script>
 <script type="text/javascript" src="../dist/assets/js/welshify.js"></script>
+<script type="text/javascript" src="../dist/assets/js/welshify-days.min.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -26,6 +27,10 @@ $(document).ready(function(){
 
 	// now let me see the welsh version.
 	$('#translatedText').html(welsh);
+
+	var boby = Days.Get9stOfJanuary();
+
+	console.log(boby);
 
 	console.log(welsh);
 

@@ -81,6 +81,19 @@ Result: Franceiau
 
 All you need to do is put a number inside the Welshify.GetCountry() method and Welshify will give you the 73rd country in the list of countries, whatever that is.
 
+### Get Day
+
+Welshify offers tremendous day translation capabilities and it's better than onion gravy. Here's how it works.
+
+```
+var dayTranslate = Days.Get1stOfJanuary();
+console.log(dayTranslate);
+```
+
+```
+Result: 1tiau Januaryio
+```
+
 ### Exception Handling
 
 Each Welshify feature now returns a 'Wexpection' which, of course, has been Welshifyed.
