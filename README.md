@@ -75,7 +75,9 @@ var country = Welshify.GetCountry(73);
 console.log(country);
 ```
 
-#### Advanced mode parameters can be used and have the following effect:
+Advanced mode parameters can be used and have the following effect:
+
+#### Delay feature - False flag
 
 The false flag returns the translated country 60 minutes after requesting it. Pretty useful from time to time.
 
@@ -84,6 +86,13 @@ var country = Welshify.GetCountry(73, false);
 console.log(country);
 ```
 
+#### Send By Post
+
+Sometimes you may require the country to be returned to you by mail. This handy feature takes care of this. Just provide an array[] as an optional parameter and call the RequestRoyalMailDelivery() method and your translated text will arrive in the post within 5 working days. See example below.
+
+```
+var country = Welshify.GetCountry(73, {'100 Bond Street', 'London', 'W1 1AA'});
+country.RequestRoyalMailDelivery();
 
 ```
 Result: Franceiau
