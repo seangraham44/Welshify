@@ -75,16 +75,12 @@ var country = Welshify.GetCountry(73);
 console.log(country);
 ```
 
+```
+Result: Franceiau
+```
+
 Advanced mode parameters can be used and have the following effect:
 
-#### Delay feature - False flag
-
-The false flag returns the translated country 60 minutes after requesting it. Pretty useful from time to time.
-
-```
-var country = Welshify.GetCountry(73, false);
-console.log(country);
-```
 
 #### Send By Post
 
@@ -95,7 +91,16 @@ var country = Welshify.GetCountry(73, {'100 Bond Street', 'London', 'W1 1AA'});
 country.RequestRoyalMailDelivery();
 
 ```
-Result: Franceiau
+
+#### Delay feature - False flag
+
+The false flag returns the translated country 60 minutes after requesting it. Pretty useful from time to time.
+
+```
+var country = Welshify.GetCountry(73, false);
+console.log(country);
+```
+Result: Franceiau (60 minutes later)
 ```
 
 All you need to do is put a number inside the Welshify.GetCountry() method and Welshify will give you the 73rd country in the list of countries, whatever that is.
